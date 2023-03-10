@@ -47,15 +47,15 @@ public class BaseClass_Logibec {
 
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[contains(text(),'ACCUEIL')] | //a[contains(text(),'HOME')]"))).click();
 
-		if(driver.getPageSource().contains("Do you want to save the data?")|driver.getPageSource().contains("Voulez-vous enregistrer les données?")) {
+		if(driver.getPageSource().contains("Do you want to save the data?")|driver.getPageSource().contains("Voulez-vous enregistrer les donnï¿½es?")) {
 
-			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[contains(text(),' Oui ')] | //span[contains(text(),' Yes ')]"))).click();
+		//	wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[contains(text(),' Oui ')] | //span[contains(text(),' Yes ')]"))).click();
 		}
 
 	}
 	public void navigateToDoctor() throws InterruptedException {
 		navigateToManagementMenu();
-		driver.findElement(By.xpath("//div[contains(text(),' Doctors')] | //div[contains(text(),' Médecins')]")).click();
+		driver.findElement(By.xpath("//div[contains(text(),' Doctors')] | //div[contains(text(),' Mï¿½decins')]")).click();
 	}
 	public void tabKey() throws AWTException {
 		robot=new Robot();
@@ -77,7 +77,7 @@ public class BaseClass_Logibec {
 
 	public void clickCreateSubWindow() throws InterruptedException {
 		sleeps();
-		WebElement createSub = driver.findElement(By.xpath("(//button[contains(text(),'Créer')] | //button[contains(text(),'Create')])[2]"));
+		WebElement createSub = driver.findElement(By.xpath("(//button[contains(text(),'Crï¿½er')] | //button[contains(text(),'Create')])[2]"));
 		createSub.click();
 	}
 	public void clickOKSubWindow() throws InterruptedException {
@@ -92,7 +92,7 @@ public class BaseClass_Logibec {
 	}
 	public void clickRestoreSubWindow() throws InterruptedException {
 		sleeps();
-		WebElement deleteSub = driver.findElement(By.xpath("(//button[contains(text(),'Rétablir')] | //button[contains(text(),'Restore')])[2]"));
+		WebElement deleteSub = driver.findElement(By.xpath("(//button[contains(text(),'Rï¿½tablir')] | //button[contains(text(),'Restore')])[2]"));
 		deleteSub.click();
 	}
 	public void pressDownArrow() throws AWTException {
@@ -102,7 +102,7 @@ public class BaseClass_Logibec {
 	}
 	public void navigateToLogout() throws InterruptedException {
 
-		WebElement createSub = driver.findElement(By.xpath("//div[contains(text(),' Fermeture de la session (déconnexion)')] | //div[contains(text(),' Logout(disconnection)')]"));
+		WebElement createSub = driver.findElement(By.xpath("//div[contains(text(),' Fermeture de la session (dï¿½connexion)')] | //div[contains(text(),' Logout(disconnection)')]"));
 		createSub.click();
 
 	}
@@ -115,8 +115,8 @@ public class BaseClass_Logibec {
 	public void navigateToallergiesPMH() throws InterruptedException {
 
 		sleeps();
-		WebElement allergiesPMH = driver.findElement(By.xpath("//div[contains(text(),' Allergies & antécédents')] | //div[contains(text(),' Allergies/P.M.H.')]"));
-		//		WebElement allergiesPMH = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[contains(text(),' Allergies & antécédents')] | //div[contains(text(),' Allergies/P.M.H.')]")));
+		WebElement allergiesPMH = driver.findElement(By.xpath("//div[contains(text(),' Allergies & antï¿½cï¿½dents')] | //div[contains(text(),' Allergies/P.M.H.')]"));
+		//		WebElement allergiesPMH = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[contains(text(),' Allergies & antï¿½cï¿½dents')] | //div[contains(text(),' Allergies/P.M.H.')]")));
 		sleeps();
 		allergiesPMH.click();
 	}
@@ -200,7 +200,7 @@ public class BaseClass_Logibec {
 
 	}
 	public void navigateToScreeningTools() {
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[contains(text(),' Questionnaires de dépistage')] | //div[contains(text(),'Screening tools')]"))).click();
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[contains(text(),' Questionnaires de dï¿½pistage')] | //div[contains(text(),'Screening tools')]"))).click();
 
 	}
 	public void navigatePrintManagement() {
@@ -212,7 +212,7 @@ public class BaseClass_Logibec {
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[contains(text(),'ACCUEIL')] | //a[contains(text(),'HOME')]"))).click();
 		sleeps();
 
-		if(driver.getPageSource().contains("Do you want to save the data?")|driver.getPageSource().contains("Voulez-vous enregistrer les données?")) {
+		if(driver.getPageSource().contains("Do you want to save the data?")|driver.getPageSource().contains("Voulez-vous enregistrer les donnï¿½es?")) {
 
 			createTest.log(Status.PASS,"The application throws an error when we leave without saving the changes");
 		}else {
@@ -229,7 +229,7 @@ public class BaseClass_Logibec {
 	}
 
 	public void navigateToScreeningToolPrint() {
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[contains(text(),' Screening tools')] | //div[contains(text(),'Questionnaires de dépistage')]"))).click();
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[contains(text(),' Screening tools')] | //div[contains(text(),'Questionnaires de dï¿½pistage')]"))).click();
 	}
 	//	}
 	public void timeOutMessage() throws InterruptedException {
@@ -302,7 +302,7 @@ public class BaseClass_Logibec {
 		System.out.println("After login passed");
 		System.out.println("Login passed");
 		sleeps();
-		if(driver.getPageSource().contains("Changer le rôle ou l'unité")| driver.getPageSource().contains("Choice of user role in system"))
+		if(driver.getPageSource().contains("Changer le rï¿½le ou l'unitï¿½")| driver.getPageSource().contains("Choice of user role in system"))
 		{
 			driver.findElement(By.xpath("(//button[text()='MEDIAMED'])[2]")).click();
 		}
@@ -371,17 +371,17 @@ public class BaseClass_Logibec {
 		clickingMainMenu();
 		navigateToPortalMenu();
 
-		driver.findElement(By.xpath("//div[text()=' Logout(disconnection)'] | //div[text()=' Fermeture de la session (déconnexion)']")).click();
+		driver.findElement(By.xpath("//div[text()=' Logout(disconnection)'] | //div[text()=' Fermeture de la session (dï¿½connexion)']")).click();
 		sleeps();
-		if((driver.getPageSource().contains("Voulez-vous enregistrer les données?"))||(driver.getPageSource().contains("Do you want to save the data?")) )
+		if((driver.getPageSource().contains("Voulez-vous enregistrer les donnï¿½es?"))||(driver.getPageSource().contains("Do you want to save the data?")) )
 		{
 			clickYesButton();
 
 		}
 		Thread.sleep(15000);
 
-		if((driver.getPageSource().contains("Tous les utilisateurs doivent avoir une unité. Voici la liste des utilisateurs sans unité:"))||(driver.getPageSource().contains("All users must have a unit. Here is the list of users without a unit:")) )
-			//		if((driver.findElement(By.xpath("(//h2[contains(text(),'Tous les utilisateurs doivent avoir une unité. Voici la liste des utilisateurs sans unité:')] | //h2[contains(text(),'"
+		if((driver.getPageSource().contains("Tous les utilisateurs doivent avoir une unitï¿½. Voici la liste des utilisateurs sans unitï¿½:"))||(driver.getPageSource().contains("All users must have a unit. Here is the list of users without a unit:")) )
+			//		if((driver.findElement(By.xpath("(//h2[contains(text(),'Tous les utilisateurs doivent avoir une unitï¿½. Voici la liste des utilisateurs sans unitï¿½:')] | //h2[contains(text(),'"
 			//				+ "All users must have a unit. Here is the list of users without a unit:')])[1]")).isDisplayed()))
 		{
 			System.out.println("before click");
@@ -396,7 +396,7 @@ public class BaseClass_Logibec {
 	}
 	public void clickCreateButton() throws InterruptedException {
 		sleeps();
-		WebElement createButton = driver.findElement(By.xpath("//button[contains(text(),'Créer')] | //button[contains(text(),'Create')]"));
+		WebElement createButton = driver.findElement(By.xpath("//button[contains(text(),'Crï¿½er')] | //button[contains(text(),'Create')]"));
 		createButton.click();
 		sleeps();
 	}
@@ -618,7 +618,7 @@ public class BaseClass_Logibec {
 	public  void clickRestoreButton() throws InterruptedException
 	{
 		sleeps();
-		WebElement deleteButton = driver.findElement(By.xpath("//button[contains(text(),'Rétablir')] | //button[contains(text(),'Restore')]"));
+		WebElement deleteButton = driver.findElement(By.xpath("//button[contains(text(),'Rï¿½tablir')] | //button[contains(text(),'Restore')]"));
 		deleteButton.click();
 		sleeps();
 	}
@@ -661,7 +661,7 @@ public class BaseClass_Logibec {
 
 	public void clickAllFilter() throws InterruptedException
 	{
-		//WebElement reservedFilter = driver.findElement(By.xpath("(//span[contains(text(),'Réservé')] | //span[contains(text(),'Reserved')])//ancestor::mat-radio-button//span[@class='mat-radio-outer-circle']"));
+		//WebElement reservedFilter = driver.findElement(By.xpath("(//span[contains(text(),'Rï¿½servï¿½')] | //span[contains(text(),'Reserved')])//ancestor::mat-radio-button//span[@class='mat-radio-outer-circle']"));
 
 		WebElement allFilter = driver.findElement(By.xpath("(//span[contains(text(),'Tous')] | //span[contains(text(),'All')])//ancestor::mat-radio-button//span[@class='mat-radio-container']"));
 		allFilter.click();
@@ -689,7 +689,7 @@ public class BaseClass_Logibec {
 	public void clickReservedFilter() throws InterruptedException
 	{
 
-		WebElement reservedFilter = driver.findElement(By.xpath("(//span[contains(text(),'Réservé')] | //span[contains(text(),'Reserved')])//ancestor::mat-radio-button//span[@class='mat-radio-container']"));
+		WebElement reservedFilter = driver.findElement(By.xpath("(//span[contains(text(),'Rï¿½servï¿½')] | //span[contains(text(),'Reserved')])//ancestor::mat-radio-button//span[@class='mat-radio-container']"));
 		//WebElement reservedFilter = driver.findElement(By.xpath("//input[@value='reserved']"));
 
 		reservedFilter.click();
@@ -707,7 +707,7 @@ public class BaseClass_Logibec {
 
 		{
 			sleeps();
-			if(driver.getPageSource().contains("La configuration de ce poste n'est pas faite pour l'affichage des statistiques, les statistiques générales seront affichées"))
+			if(driver.getPageSource().contains("La configuration de ce poste n'est pas faite pour l'affichage des statistiques, les statistiques gï¿½nï¿½rales seront affichï¿½es"))
 			{
 				driver.findElement(By.id("btn1")).click();
 				sleeps();
@@ -739,7 +739,7 @@ public class BaseClass_Logibec {
 		{
 			sleeps();
 			sleeps();
-			if(driver.getPageSource().contains("La configuration de ce poste n'est pas faite pour l'affichage des statistiques, les statistiques générales seront affichées"))
+			if(driver.getPageSource().contains("La configuration de ce poste n'est pas faite pour l'affichage des statistiques, les statistiques gï¿½nï¿½rales seront affichï¿½es"))
 			{
 				driver.findElement(By.id("btn1")).click();
 				sleeps();
@@ -802,7 +802,7 @@ public class BaseClass_Logibec {
 
 			//Move to Management menu
 			System.out.println("before clicking kardex");
-			WebElement medicationTablesAndKardex = driver.findElement(By.xpath("//div[text()=' Tables liées aux médicaments et DCI'] | //div[text()=' Medication tables and kardex']"));
+			WebElement medicationTablesAndKardex = driver.findElement(By.xpath("//div[text()=' Tables liï¿½es aux mï¿½dicaments et DCI'] | //div[text()=' Medication tables and kardex']"));
 			sleeps();
 			Actions action=new Actions(driver);
 			action.moveToElement(medicationTablesAndKardex).build().perform();
@@ -813,7 +813,7 @@ public class BaseClass_Logibec {
 		public void navigateToPredefinedTables() throws InterruptedException
 		{
 			navigateToLocalTablesMenu();
-			WebElement localTables = driver.findElement(By.xpath("//div[text()=' Predefined tables (Normative framework)'] | //div[text()=' Tables prédéfinies (Cadre Normatif)']"));
+			WebElement localTables = driver.findElement(By.xpath("//div[text()=' Predefined tables (Normative framework)'] | //div[text()=' Tables prï¿½dï¿½finies (Cadre Normatif)']"));
 			sleeps();
 			Actions action=new Actions(driver);
 			action.moveToElement(localTables).build().perform();
@@ -1209,7 +1209,7 @@ public class BaseClass_Logibec {
 			
 			public void verifyDuplicationNotAllowed() throws InterruptedException 
 			{
-				if((driver.getPageSource().contains("La commande d’extraction et/ou de sauvegarde de données a échoué."))|(driver.getPageSource().contains("Data extraction and/or saving command failed.")) )
+				if((driver.getPageSource().contains("La commande dï¿½extraction et/ou de sauvegarde de donnï¿½es a ï¿½chouï¿½."))|(driver.getPageSource().contains("Data extraction and/or saving command failed.")) )
 				{	
 					createTest.log(Status.PASS,"Verified duplicate is not allowed to create ");
 					clickOKButton();
@@ -1225,7 +1225,7 @@ public class BaseClass_Logibec {
 			
 			public void verifyDuplicationAllowed() throws InterruptedException
 			{
-				if(!((driver.getPageSource().contains("La commande d’extraction et/ou de sauvegarde de données a échoué."))|(driver.getPageSource().contains("Data extraction and/or saving command failed."))) )
+				if(!((driver.getPageSource().contains("La commande dï¿½extraction et/ou de sauvegarde de donnï¿½es a ï¿½chouï¿½."))|(driver.getPageSource().contains("Data extraction and/or saving command failed."))) )
 				{	
 					createTest.log(Status.PASS,"Verified duplicate is allowed to create with same description ");
 					clickDeleteButton();
@@ -1243,7 +1243,7 @@ public class BaseClass_Logibec {
 				record.click();
 				clickDeleteButton();
 				clickHome();
-				if((driver.getPageSource().contains("Voulez-vous enregistrer les données?"))|(driver.getPageSource().contains("Do you want to save the data?")) )
+				if((driver.getPageSource().contains("Voulez-vous enregistrer les donnï¿½es?"))|(driver.getPageSource().contains("Do you want to save the data?")) )
 				{
 					createTest.log(Status.PASS,"A confirmation is shown when Home link was clicked without saving");
 					clickYesButton();
@@ -1285,13 +1285,13 @@ public class BaseClass_Logibec {
 			
 			public void verifyUnitButton() throws InterruptedException
 			{
-				driver.findElement(By.xpath("//button[text()='Unité'] | //button[text()='Unit']")).click();
+				driver.findElement(By.xpath("//button[text()='Unitï¿½'] | //button[text()='Unit']")).click();
 				sleeps();
-				WebElement createButton1 = driver.findElement(By.xpath("(//button[contains(text(),'Créer')] | //button[contains(text(),'Create')])[2]"));
+				WebElement createButton1 = driver.findElement(By.xpath("(//button[contains(text(),'Crï¿½er')] | //button[contains(text(),'Create')])[2]"));
 				createButton1.click();
 				sleeps();
 
-				if((driver.getPageSource().contains("Choix de l'unité")) | (driver.getPageSource().contains("Choice of unit")) )
+				if((driver.getPageSource().contains("Choix de l'unitï¿½")) | (driver.getPageSource().contains("Choice of unit")) )
 				{	
 					createTest.log(Status.PASS,"Unit window is opened when Unit button was clicked" );
 					createTest.log(Status.PASS,"Verified Choice of unit window is opened when clicked on Create Unit button");
@@ -1308,7 +1308,7 @@ public class BaseClass_Logibec {
 				clickSaveAndCloseButton();
 				Thread.sleep(4000);
 
-				driver.findElement(By.xpath("//button[text()='Unité'] | //button[text()='Unit']")).click();
+				driver.findElement(By.xpath("//button[text()='Unitï¿½'] | //button[text()='Unit']")).click();
 				sleeps();
 
 				if(driver.findElement(By.xpath("//span[text()='urg']")).isDisplayed())
@@ -1341,7 +1341,7 @@ public class BaseClass_Logibec {
 				sleeps();
 				clickCloseIcon();
 				sleeps();
-				if((driver.getPageSource().contains("Voulez-vous enregistrer les données?")) | (driver.getPageSource().contains("Do you want to save the data?")) )
+				if((driver.getPageSource().contains("Voulez-vous enregistrer les donnï¿½es?")) | (driver.getPageSource().contains("Do you want to save the data?")) )
 				{
 					clickYesButton();
 					sleeps();
