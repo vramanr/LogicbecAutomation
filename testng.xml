@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+	<groups>
+		<run>
+			<include name="Common"></include>
+		
+		
+			<!--Oct screens -->
+
+			<include name="ClinicalService"></include> 
+			<include name="Users"></include>
+			<include name="ControlPoints"></include>
+			<include name="UsersDoctorsImport"></include>
+			<include name="StretcherBedCategories"></include>
+			<include name="StretcherBed"></include>
+			<include name="MedicalNoteWordForm"></include>
+			<include name="ConsultNoteWordForm"></include>
+			<include name="ElementsNoteWordForm"></include>
+			<include name="AlarmAndNOSOManagement"></include>
+			<include name="AlarmPriorityAndColorManagement"></include>
+			<include name="ArrivalModeScreen"></include>
+			<include name="BoardConfigurationByUnit"></include>
+			<include name="CMD"></include>
+			<include name="Consultation"></include>
+			<include name="CustomNoteWordForm"></include>
+			<include name="DestinationAfterTriage"></include>
+			<include name="Diagnosis"></include>
+			<include name="Institution"></include>
+			<include name="Interveners"></include>
+			<include name="PaymentResponsibility"></include>
+			<include name="Unit"></include>
+			<include name="StationAlarmManagement"></include>
+			<include name="StatsConfigurationByComputer"></include>
+			<include name="StretcherBedInBoard"></include>
+			<include name="TicketTerminalManagement"></include>
+			<include name="TransferReason"></include>
+			<include name="TriageStationsManagement"></include>
+			<include name="Activities - Cancel Reasons"></include>
+			<include name="Consultant Call"></include>
+			<include name="Accident-groups"></include>
+			<include name="Accident"></include>
+			<include name="Configuration"></include>
+			<include name="Doctor"></include>
+			<include name="Roles"></include>
+			<include name="Roles/Controlpoints"></include>
+			<include name="ControlpointsRoles"></include>
+
+			<!--Nov screens -->
+
+			<include name="AllergiesAllergensType"></include>
+			<include name="AllergiesAllergensCategory"></include>
+			<include name="Severity"></include>
+			<include name="SensitivitytoAllergens"></include>
+			<include name="Clinicalstatus"></include>
+			<include name="Allergicsreaction"></include>
+			<include name="Informationsources"></include>
+			<include name="TriageComplaintsConfigurationAdult"></include>
+			<include name="TriagecomplaintsconfigurationPediatrics"></include>
+			<include name="Consultationplanning"></include>
+			<include name="LWBSReasons"></include>
+			<include name="ReorientedDepartureAlternativeRessource"></include>
+			<include name="ReorientedDepartureReasonforRefusal"></include>
+			<include name="Diet"></include>
+			<include name="Institutionmissions"></include>
+			<include name="Lifecontext"></include>
+			<include name="ActivitiesforPABworkplan"></include>
+			<include name="Provenance"></include>
+			<include name="HospitalizationReasonforcancellation"></include>
+			<include name="TransferTransportation"></include>
+			<include name="TransferEscort"></include>
+			<include name="DischargePlanningstatus"></include>
+			<include name="ReturnhomeReferredServices"></include>
+			<include name="ReturnhomeTypesofdischarge"></include> 
+			<include name="ReturnVisitReasons"></include>
+			<include name="Oxygenadministrationmethod"></include>
+			<include name="Oxygenadministrationflow"></include>
+			<include name="HeartrateQualitative"></include>
+			<include name="BloodpressureQualitative"></include>
+			<include name="RespiratoryrateQualitative"></include>
+			<include name="TemperatureQualitative"></include>
+			<include name="AbsenceReasonsScreeninTools"></include>
+			<include name="Scores"></include>
+			<include name="BriefAssessmentReasons"></include>
+			<include name="Ventilators"></include>
+			<include name="Absencereasons"></include>
+			<include name="AbsencereasonsColors"></include>
+			<include name="InternalOrderForced"></include>
+			<include name="InternalOrder"></include>
+			<include name="TransferPatientlist"></include>
+			<include name="Leavingmedication24hrs"></include>
+			 <include name="ReasonsForCodeOrange"></include>
+			<include name="GasResultsCorrespondence"></include>
+			<include name="ReasonsofConsultation"></include>
+			<include name="ScreeningToolsConfiguration"></include> 
+
+
+			<!--Dec screens -->
+
+			<include name="ClinicalDossier"></include>
+			<include name="SummaryofCare"></include>
+			<include name="AH280"></include>
+			<include name="ReturnVisitTicket"></include>
+			<include name="Consultant"></include>
+			<include name="EmergencyInitialPrescription"></include>
+			<include name="DischargeOrder"></include>
+			<include name="PAB"></include>
+			<include name="Comparative"></include>
+			<include name="VitalSigns"></include>
+			<include name="UrineDipstick"></include>
+			<include name="NeurologicalSigns"></include>
+			<include name="CriticalPatients"></include>
+			<include name="Triage"></include>
+			<include name="IntakeOutput"></include>
+			<include name="COVID-19"></include>
+			<include name="OWord Document bookmarks"></include>
+			<include name="OACIS Additional Information"></include>
+			<include name="Consultation-Cancel Reason"></include>
+			<include name="Domain configuration"></include>
+			<include name="Absence reasons - Reevaluation"></include>
+			<include name="Route of administration"></include>
+			<include name="Schedule"></include>
+			<include name="Default route and frequency"></include>
+			<include name="List of protocols"></include>
+			<include name="Frequency"></include>
+			<include name="AH 280 Additional Information"></include>
+
+
+			<!--Jan screens -->
+
+			<include name="PerfusionsSite"></include>
+			<include name="PerfusionSpecification"></include>
+			<include name="ListOfQuickPrescriptionSheet"></include>
+			<include name="ListOfQuickPrescriptionSection"></include>
+			<include name="ListOfLinkSheetSection"></include>
+			<include name="ListOfQuickPrescriptionItems"></include>
+			<include name="ListOfQuickPrescriptionRX"></include>
+			<include name="ListOfQuickPrescriptionOtherItems"></include>
+			<include name="TriageProtocols"></include>
+			<include name="DeparturePrintManagement"></include>
+			<include name="Medicationconfiguration"></include>
+			<include name="Units"></include>
+			<include name="PerfusionType"></include>
+			<include name="SpecialActivitiesConfiguration"></include>
+			<include name="SpecialActivitiesAssociation"></include>
+			<include name="Dosagegroups"></include>
+			<include name="ExamDCImode"></include>
+			<include name="FormPrintManager"></include>
+
+		</run>
+	</groups>
+
+	<listeners>
+		<listener class-name="com.listeners.Listeners"></listener>
+	</listeners>
+	
+	<test name="ChromeTest">
+		<parameter name="Browser" value="chrome"></parameter>
+		<classes>
+			<class name="com.testCases.CrossBrowserTesting" />
+		</classes>
+	</test>  <!-- Test -->
+
+
+	<!--<test name="EdgeTest"> <parameter name="Browser" value="Edge"></parameter> 
+		<classes> <class name="com.testCases.CrossBrowserTesting" /> </classes> </test>
+
+
+	<test name="FirefoxTest"> <parameter name="Browser" value="Firefox"></parameter> 
+		<classes> <class name="com.testCases.CrossBrowserTesting" /> </classes> </test>-->
+
+</suite> <!-- Suite -->

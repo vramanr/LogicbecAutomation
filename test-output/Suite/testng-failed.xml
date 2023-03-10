@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="com.listeners.Listeners"/>
+  </listeners>
+  <test thread-count="5" name="ChromeTest(failed)">
+    <parameter name="Browser" value="chrome"/>
+    <groups>
+      <run>
+        <include name="Common"/>
+        <include name="Route of administration"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.testCases.CrossBrowserTesting">
+        <methods>
+          <include name="reportsGeneration"/>
+          <include name="afterClass"/>
+          <include name="filterRecords_routeOfAdministration"/>
+        </methods>
+      </class> <!-- com.testCases.CrossBrowserTesting -->
+    </classes>
+  </test> <!-- ChromeTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->

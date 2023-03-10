@@ -1,0 +1,1048 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Suite">
+              <span class="suite-name border-failed">Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Suite">
+                    <span>C:\logibec\Logibec_MS\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Suite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Suite">
+                    <span>2 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">3 methods, 1 failed,   2 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.testCases.CrossBrowserTesting" hash-for-method="filterRecords_routeOfAdministration">filterRecords_routeOfAdministration</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.testCases.CrossBrowserTesting" hash-for-method="routeOfAdministration_Validation">routeOfAdministration_Validation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.testCases.CrossBrowserTesting" hash-for-method="urlLaunch(chrome)">urlLaunch(chrome)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.testCases.CrossBrowserTesting</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="filterRecords_routeOfAdministration">
+                  </a> <!-- filterRecords_routeOfAdministration -->
+                  <span class="method-name">filterRecords_routeOfAdministration</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span class=&quot;mat-radio-container&quot;&gt;...&lt;/span&gt; is not clickable at point (1094, 120). Other element would receive the click: &lt;div _ngcontent-ild-c58=&quot;&quot; class=&quot;busy-indicator ng-star-inserted&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=110.0.5481.178)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;MAC-AZR-228&apos;, ip: &apos;10.212.134.211&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_202&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.178, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\SHEHAN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57583}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 091fb2cf80b830571caadcda77f3ab48
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at com.baseClass.BaseClass_Logibec.clickActiveFilter(BaseClass_Logibec.java:677)
+	at com.testCases.CrossBrowserTesting.filterRecords_routeOfAdministration(CrossBrowserTesting.java:19721)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.testCases.CrossBrowserTesting</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="routeOfAdministration_Validation">
+                  </a> <!-- routeOfAdministration_Validation -->
+                  <span class="method-name">routeOfAdministration_Validation</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="urlLaunch(chrome)">
+                  </a> <!-- urlLaunch(chrome) -->
+                  <span class="method-name">urlLaunch</span>
+                  <span class="parameters">(chrome)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\logibec\Logibec_MS\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.listeners.Listeners&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;groups&gt;
+    &lt;run&gt;
+      &lt;include name=&quot;Common&quot;/&gt;
+      &lt;include name=&quot;Route of administration&quot;/&gt;
+    &lt;/run&gt;
+  &lt;/groups&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;ChromeTest&quot;&gt;
+    &lt;parameter name=&quot;Browser&quot; value=&quot;chrome&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.testCases.CrossBrowserTesting&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- ChromeTest --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">ChromeTest (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">Common</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">urlLaunch</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">Route of administration</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">filterRecords_routeOfAdministration</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">routeOfAdministration_Validation</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(3);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'routeOfAdministration_Validation')
+data.setCell(0, 2, 'com.testCases.CrossBrowserTesting')
+data.setCell(0, 3, 127832);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'filterRecords_routeOfAdministration')
+data.setCell(1, 2, 'com.testCases.CrossBrowserTesting')
+data.setCell(1, 3, 28771);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'urlLaunch')
+data.setCell(2, 2, 'com.testCases.CrossBrowserTesting')
+data.setCell(2, 3, 13294);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">347 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.testCases.CrossBrowserTesting</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">createingNewRecordOxygenadministrationflow</span>
+                <br/>
+                <span class="ignored-method-name">navigateToExam</span>
+                <br/>
+                <span class="ignored-method-name">createingNewRecordInformationsources</span>
+                <br/>
+                <span class="ignored-method-name">createingNewRecordTransferPatientlist</span>
+                <br/>
+                <span class="ignored-method-name">ConsultationCancelReason_Validation</span>
+                <br/>
+                <span class="ignored-method-name">CMDValidation</span>
+                <br/>
+                <span class="ignored-method-name">StretcherBedInBoard_FilteringAndDeletion</span>
+                <br/>
+                <span class="ignored-method-name">navigateToAbsencereasonsColors</span>
+                <br/>
+                <span class="ignored-method-name">createingNewRecordTransferEscort</span>
+                <br/>
+                <span class="ignored-method-name">navigateToLifecontext</span>
+                <br/>
+                <span class="ignored-method-name">navigateToFormPrintManagerScreen</span>
+                <br/>
+                <span class="ignored-method-name">duplicateErrorValiadtionDiet</span>
+                <br/>
+                <span class="ignored-method-name">negativeDefaultErrorValiadtionInformationsources</span>
+                <br/>
+                <span class="ignored-method-name">filterRecords_Accident</span>
+                <br/>
+                <span class="ignored-method-name">navigateToDischargePlanningstatus</span>
+                <br/>
+                <span class="ignored-method-name">navigateToTriageComplaintsConfigurationAdult</span>
+                <br/>
+                <span class="ignored-method-name">TriageStation_filterAndDeletion</span>
+                <br/>
+                <span class="ignored-method-name">duplicateErrorValiadtionDischargePlanningstatus</span>
+                <br/>
+                <span class="ignored-method-name">triageProtocols_Validation</span>
+                <br/>
+                <span class="ignored-method-name">navigateToPAB</span>
+                <br/>
+                <span class="ignored-method-name">medicalNoteWordFormValidation</span>
+                <br/>
+                <span class="ignored-method-name">Schedule_Validation</span>
+                <br/>
+                <span class="ignored-method-name">accidentGroupsValidation</span>
+                <br/>
+                <span class="ignored-method-name">createingNewRecordDischargePlanningstatus</span>
+                <br/>
+                <span class="ignored-method-name">InstitutionValidation</span>
+                <br/>
+                <span class="ignored-method-name">createingNewRecordConsultant</span>
+                <br/>
+                <span class="ignored-method-name">StationAlarmManagement_filterAndDeletion</span>
+                <br/>
+                <span class="ignored-method-name">createingNewRecordUrineDipstick</span>
+                <br/>
+                <span class="ignored-method-name">codeColumnsValidationDiet</span>
+                <br/>
+                <span class="ignored-method-name">functionalityValidationOfCategory</span>
+                <br/>
+                <span class="ignored-method-name">navigateToAH280</span>
+                <br/>
+                <span class="ignored-method-name">serviceCliniqueAndConsultationWindow_Verification</span>
+                <br/>
+                <span class="ignored-method-name">sortingAndDeletingDischargePlanningstatus</span>
+                <br/>
+                <span class="ignored-method-name">filterRecords_Frequency</span>
+                <br/>
+                <span class="ignored-method-name">createingNewRecordVentilators</span>
+                <br/>
+                <span class="ignored-method-name">duplicateErrorValiadtionConsultationplanning</span>
+                <br/>
+                <span class="ignored-method-name">triageProtocols_filterAndDeletion</span>
+                <br/>
+                <span class="ignored-method-name">codeColumnsValidationTransferTransportation</span>
+                <br/>
+                <span class="ignored-method-name">verifyingTheIngredient</span>
+                <br/>
+                <span class="ignored-method-name">sortingAndDeletingAbsencereasons</span>
+                <br/>
+                <span class="ignored-method-name">sortingAndDeletingLifecontext</span>
+                <br/>
+                <span class="ignored-method-name">listOfProtocols_Validation</span>
+                <br/>
+                <span class="ignored-method-name">navigateToAbsenceReasonsScreeninTools</span>
+                <br/>
+                <span class="ignored-method-name">duplicateErrorValiadtionSensitivitytoAllergens</span>
+                <br/>
+                <span class="ignored-method-name">sortingAndDeletingHospitalizationReasonforcancellation</span>
+                <br/>
+                <span class="ignored-method-name">navigateToAbsencereasons</span>
+                <br/>
+                <span class="ignored-method-name">navigateToTransferTransportation</span>
+                <br/>
+                <span class="ignored-method-name">sortingAndDeletingAbsencereasonsColors</span>
+                <br/>
+                <span class="ignored-method-name">codeColumnsValidationBloodpressureQualitative</span>
+                <br/>
+                <span class="ignored-method-name">verifyingTheFilterSpecialActivitiesConfiguration</span>
+                <br/>
+                <span class="ignored-method-name">duplicateErrorValiadtionReturnhomeReferredServices</span>
+                <br/>
+                <span class="ignored-method-name">VerifyingTheErrorsSpecialActivitiesConfiguration</span>
+                <br/>
+                <span class="ignored-method-name">duplicateErrorValiadtionLWBSReasons</span>
+                <br/>
+                <span class="ignored-method-name">createingNewRecordNeurologicalSigns</span>
+                <br/>
+                <span class="ignored-method-name">createingNewCategory</span>
+                <br/>
+                <span class="ignored-method-name">listOfQuickPrescriptionRX_Validation</span>
+                <br/>
+                <span class="ignored-method-name">codeColumnsValidationReturnhomeTypesofdischarge</span>
+                <br/>
+                <span class="ignored-method-name">createingNewRecordSummaryofCare</span>
+                <br/>
+                <span class="ignored-method-name">naviagteToAllergensCategory</span>
+                <br/>
+                <span class="ignored-method-name">createingNewRecordConsultationplanning</span>
+                <br/>
+                <span class="ignored-method-name">navigateToInstitutionmissions</span>
+                <br/>
+                <span class="ignored-method-name">createingNewRecordReturnhomeReferredServices</span>
+                <br/>
+                <span class="ignored-method-name">duplicateErrorValiadtionReturnVisitReasons</span>
+                <br/>
+                <span class="ignored-method-name">StretcherBedInBoard_Creation</span>
+                <br/>
+                <span class="ignored-method-name">listOfQuickPrescriptionOtherItems_Validation</span>
+                <br/>
+                <span class="ignored-method-name">sortingAndDeletingRespiratoryrateQualitative</span>
+                <br/>
+                <span class="ignored-method-name">navigateToIntakeOutput</span>
+                <br/>
+                <span class="ignored-method-name">navigateToInternalOrderForced</span>
+                <br/>
+                <span class="ignored-method-name">listOfProtocols_ProtocolsInclus</span>
+                <br/>
+                <span class="ignored-method-name">duplicateErrorValiadtionInstitutionmissions</span>
+                <br/>
+                <span class="ignored-method-name">checkingCodecolumn</span>
+                <br/>
+                <span class="ignored-method-name">navigateToReorientedDepartureReasonforRefusal</span>
+                <br/>
+                <span class="ignored-method-name">stretcherBedValidation</span>
+                <br/>
+                <span class="ignored-method-name">navigateToComparative</span>
+                <br/>
+                <span class="ignored-method-name">duplicateErrorValiadtionOxygenadministrationmethod</span>
+                <br/>
+                <span class="ignored-method-name">navigateToUrineDipstick</span>
+                <br/>
+                <span class="ignored-method-name">navigateToGasResultsCorrespondence</span>
+                <br/>
+                <span class="ignored-method-name">createingNewRecordInternalOrderForced</span>
+                <br/>
+                <span class="ignored-method-name">navigateToOxygenadministrationmethod</span>
+                <br/>
+                <span class="ignored-method-name">Unit_filterRecords_Verification</span>
+                <br/>
+                <span class="ignored-method-name">navigateToDosagegroupsScreen</span>
+                <br/>
+                <span class="ignored-method-name">createingNewRecordAbsencereasons</span>
+                <br/>
+                <span class="ignored-method-name">sortingAndDeletingReturnhomeTypesofdischarge</span>
+                <br/>
+                <span class="ignored-method-name">creatingNewRecordPerfusionTyp</span>
+                <br/>
+                <span class="ignored-method-name">newBoardConfigurationValidation</span>
+                <br/>
+                <span class="ignored-method-name">negativeDefaultErrorValiadtion</span>
+                <br/>
+                <span class="ignored-method-name">OWordDocumentBookmarks</span>
+                <br/>
+                <span class="ignored-method-name">listOfQuickPrescriptionSheet_filterRecords</span>
+                <br/>
+                <span class="ignored-method-name">sortingAndDeletingHeartrateQualitative</span>
+                <br/>
+                <span class="ignored-method-name">codeColumnsValidationLifecontext</span>
+                <br/>
+                <span class="ignored-method-name">duplicateErrorValiadtionHospitalizationReasonforcancellation</span>
+                <br/>
+                <span class="ignored-method-name">navigateToHospitalizationReasonforcancellation</span>
+                <br/>
+                <span class="ignored-method-name">codeColumnsValidationHeartrateQualitative</span>
+                <br/>
+                <span class="ignored-method-name">newDoctorCreation</span>
+                <br/>
+                <span class="ignored-method-name">navigateToActivitiesforPABworkplan</span>
+                <br/>
+                <span class="ignored-method-name">navigateToSummaryofCarer</span>
+                <br/>
+                <span class="ignored-method-name">StatsByConfiguration_Creation</span>
+                <br/>
+                <span class="ignored-method-name">sortingAndDeletingOxygenadministrationflow</span>
+                <br/>
+                <span class="ignored-method-name">Consultation_Creation</span>
+                <br/>
+                <span class="ignored-method-name">duplicateErrorVentilators</span>
+                <br/>
+                <span class="ignored-method-name">navigateToPerfusionTypeScreen</span>
+                <br/>
+                <span class="ignored-method-name">navigateToReasonsForCodeOrange</span>
+                <br/>
+                <span class="ignored-method-name">sortingAndDeletingInstitutionmissions</span>
+                <br/>
+                <span class="ignored-method-name">listOfProtocols_ExamLabs</span>
+                <br/>
+                <span class="ignored-method-name">sortingAndDeletingReturnVisitReasons</span>
+                <br/>
+                <span class="ignored-method-name">navigateToReorientedDepartureAlternativeRessource</span>
+                <br/>
+                <span class="ignored-method-name">sortingAndDeletingGasResultsCorrespondence</span>
+                <br/>
+                <span class="ignored-method-name">filteringRecords</span>
+                <br/>
+                <span class="ignored-method-name">codeColumnsValidationOxygenadministrationmethod</span>
+                <br/>
+                <span class="ignored-method-name">duplicateErrorValiadtionTransferTransportation</span>
+                <br/>
+                <span class="ignored-method-name">sortingAndDeletingTransferTransportation</span>
+                <br/>
+                <span class="ignored-method-name">filterAndDeletingRecords</span>
+                <br/>
+                <span class="ignored-method-name">filterRecords_OACISAdditionalInformation</span>
+                <br/>
+                <span class="ignored-method-name">validatingCodecolumn</span>
+                <br/>
+                <span class="ignored-method-name">createingNewRecord</span>
+                <br/>
+                <span class="ignored-method-name">createingNewRecordReasonsofConsultation</span>
+                <br/>
+                <span class="ignored-method-name">createingNewRecordTemperatureQualitative</span>
+                <br/>
+                <span class="ignored-method-name">sortingAndDeletingTransferEscort</span>
+                <br/>
+                <span class="ignored-method-name">sortingAndDeletingConsultationplanning</span>
+                <br/>
+                <span class="ignored-method-name">filterRecords_ActivitiesCancelReason</span>
+                <br/>
+                <span class="ignored-method-name">sortingAndDeletingSeverity</span>
+                <br/>
+                <span class="ignored-method-name">VerifyingTheErrorsSpecialActivitiesAssociation</span>
+                <br/>
+                <span class="ignored-method-name">validatingColumnsTriageComplaintsConfigurationAdult</span>
+                <br/>
+                <span class="ignored-method-name">BriefAssessment_filterRecords</span>
+                <br/>
+                <span class="ignored-method-name">codeColumnsValidationReturnhomeReferredServices</span>
+                <br/>
+                <span class="ignored-method-name">navigateToInformationsources</span>
+                <br/>
+                <span class="ignored-method-name">absenceReason_Validation</span>
+                <br/>
+                <span class="ignored-method-name">consultNoteWordFormValidation</span>
+                <br/>
+                <span class="ignored-method-name">filter_records_TicketTerminal</span>
+                <br/>
+                <span class="ignored-method-name">sortingAndDeletingOxygenadministrationmethod</span>
+                <br/>
+                <span class="ignored-method-name">navigateToAllergicsreaction</span>
+                <br/>
+                <span class="ignored-method-name">sortingAndDeletingClinicalstatus</span>
+                <br/>
+                <span class="ignored-method-name">UnitAndRoleAllocation</span>
+                <br/>
+                <span class="ignored-method-name">createingNewRecordCriticalPatients</span>
+                <br/>
+                <span class="ignored-method-name">duplicateErrorValiadtionLifecontext</span>
+                <br/>
+                <span class="ignored-method-name">duplicateErrorValiadtionActivitiesforPABworkplan</span>
+                <br/>
+                <span class="ignored-method-name">controlPointScreenValidation</span>
+                <br/>
+                <span class="ignored-method-name">associationOfAlarm</span>
+                <br/>
+                <span class="ignored-method-name">Score_Validation</span>
+                <br/>
+                <span class="ignored-method-name">verifyingTheError</span>
+                <br/>
+                <span class="ignored-method-name">listOfQuickPrescriptionSection_filterRecords</span>
+                <br/>
+                <span class="ignored-method-name">createTicketTerminalManagement</span>
+                <br/>
+                <span class="ignored-method-name">createingNewRecordAbsenceReasonsScreeninTools</span>
+                <br/>
+                <span class="ignored-method-name">duplicateErrorValiadtionRespiratoryrateQualitative</span>
+                <br/>
+                <span class="ignored-method-name">createingNewRecordReorientedDepartureReasonforRefusal</span>
+                <br/>
+                <span class="ignored-method-name">TriageStationsManagementvalidation_Creation</span>
+                <br/>
+                <span class="ignored-method-name">creatingNewRecordExam</span>
+                <br/>
+                <span class="ignored-method-name">createingNewRecordLifecontext</span>
+                <br/>
+                <span class="ignored-method-name">configurationValidation</span>
+                <br/>
+                <span class="ignored-method-name">navigateToAllergiesType</span>
+                <br/>
+                <span class="ignored-method-name">sortingAndDeletingVentilators</span>
+                <br/>
+                <span class="ignored-method-name">listOfQuickPrescriptionRX_filterRecords</span>
+                <br/>
+                <span class="ignored-method-name">navigateToVitalSign</span>
+                <br/>
+                <span class="ignored-method-name">sortingAndDeletingElementsNoteWordForm</span>
+                <br/>
+                <span class="ignored-method-name">functionalityValidation</span>
+                <br/>
+                <span class="ignored-method-name">codeColumnsValidationTransferEscort</span>
+                <br/>
+                <span class="ignored-method-name">creatingNewRecord</span>
+                <br/>
+                <span class="ignored-method-name">navigateToOrdonnanceInterne</span>
+                <br/>
+                <span class="ignored-method-name">duplicateErrorValiadtionProvenance</span>
+                <br/>
+                <span class="ignored-method-name">duplicateErrorAbsencereasons</span>
+                <br/>
+                <span class="ignored-method-name">createUsersValidation</span>
+                <br/>
+                <span class="ignored-method-name">duplicateErrorValiadtion</span>
+                <br/>
+                <span class="ignored-method-name">filterRecords_absenceReason</span>
+                <br/>
+                <span class="ignored-method-name">verifyingTheFilterSpecialActivitiesAssociation</span>
+                <br/>
+                <span class="ignored-method-name">navigateToUnitsScreen</span>
+                <br/>
+                <span class="ignored-method-name">orderColumnsValidationActivitiesforPABworkplan</span>
+                <br/>
+                <span class="ignored-method-name">createingNewRecordOxygenadministrationmethod</span>
+                <br/>
+                <span class="ignored-method-name">navigateToDischargeOrder</span>
+                <br/>
+                <span class="ignored-method-name">StatsConfiguration_filterAndDeletion</span>
+                <br/>
+                <span class="ignored-method-name">filterRecords_AccidentGroups</span>
+                <br/>
+                <span class="ignored-method-name">creatingNewRecordSpecialActivitiesAssociation</span>
+                <br/>
+                <span class="ignored-method-name">perfusionSite_filterRecords</span>
+                <br/>
+                <span class="ignored-method-name">createingNewRecordClinicalstatus</span>
+                <br/>
+                <span class="ignored-method-name">creatingNewRecordDosagegroups</span>
+                <br/>
+                <span class="ignored-method-name">codeColumnsValidationReorientedDepartureReasonforRefusal</span>
+                <br/>
+                <span class="ignored-method-name">verifyingTheFilterFormPrintManager</span>
+                <br/>
+                <span class="ignored-method-name">createingNewRecordSeverity</span>
+                <br/>
+                <span class="ignored-method-name">Unit_Creation</span>
+                <br/>
+                <span class="ignored-method-name">navigateTOMedicationconfiguration</span>
+                <br/>
+                <span class="ignored-method-name">filterRecords_ConsultationCancelReason</span>
+                <br/>
+                <span class="ignored-method-name">duplicateErrorValiadtionInformationsources</span>
+                <br/>
+                <span class="ignored-method-name">createCustomNoteWordFormValidation</span>
+                <br/>
+                <span class="ignored-method-name">createingNewRecordComparative</span>
+                <br/>
+                <span class="ignored-method-name">sortingAndDeleting</span>
+                <br/>
+                <span class="ignored-method-name">creatingNewParagraph</span>
+                <br/>
+                <span class="ignored-method-name">rolesScreen</span>
+                <br/>
+                <span class="ignored-method-name">Consultation_filterAndDeletion</span>
+                <br/>
+                <span class="ignored-method-name">filterRecords_StretcherBedCategories</span>
+                <br/>
+                <span class="ignored-method-name">TransferReason_Creation</span>
+                <br/>
+                <span class="ignored-method-name">checkingFilterfunction</span>
+                <br/>
+                <span class="ignored-method-name">navigateToScreeningToolsConfiguration</span>
+                <br/>
+                <span class="ignored-method-name">creatingNewRecordFormPrintManager</span>
+                <br/>
+                <span class="ignored-method-name">createingNewRecordLeavingmedicationt</span>
+                <br/>
+                <span class="ignored-method-name">listOfQuickPrescriptionOtherItems_filterRecords</span>
+                <br/>
+                <span class="ignored-method-name">duplicateErrorValiadtionReturnhomeTypesofdischarge</span>
+                <br/>
+                <span class="ignored-method-name">ArrivalModeValidation</span>
+                <br/>
+                <span class="ignored-method-name">createingNewRecordPAB</span>
+                <br/>
+                <span class="ignored-method-name">AccidentValidation</span>
+                <br/>
+                <span class="ignored-method-name">verifyingTheFilterPerfusionType</span>
+                <br/>
+                <span class="ignored-method-name">usersDoctorsImportValidation</span>
+                <br/>
+                <span class="ignored-method-name">createingNewRecordAllergicsreaction</span>
+                <br/>
+                <span class="ignored-method-name">navigateToEmergencyInitialPrescription</span>
+                <br/>
+                <span class="ignored-method-name">duplicateErrorValiadtionReorientedDepartureReasonforRefusal</span>
+                <br/>
+                <span class="ignored-method-name">duplicateErrorValiadtionHeartrateQualitative</span>
+                <br/>
+                <span class="ignored-method-name">sortingAndDeletingDiet</span>
+                <br/>
+                <span class="ignored-method-name">createingNewRecordEmergencyInitialPrescription</span>
+                <br/>
+                <span class="ignored-method-name">navigateToConsultant</span>
+                <br/>
+                <span class="ignored-method-name">navigateToClinicalDossier</span>
+                <br/>
+                <span class="ignored-method-name">navigateToLWBSReasons</span>
+                <br/>
+                <span class="ignored-method-name">rolesAndControlpoints</span>
+                <br/>
+                <span class="ignored-method-name">navigateToConsultationPlanning</span>
+                <br/>
+                <span class="ignored-method-name">clinicalServicesValidation</span>
+                <br/>
+                <span class="ignored-method-name">createingNewRecordDiet</span>
+                <br/>
+                <span class="ignored-method-name">sortingAndDeletingBloodpressureQualitative</span>
+                <br/>
+                <span class="ignored-method-name">duplicateErrorValiadtionAllergicsreaction</span>
+                <br/>
+                <span class="ignored-method-name">listOfQuickPrescriptionItems_filterRecords</span>
+                <br/>
+                <span class="ignored-method-name">sortingAndDeletingSensitivitytoAllergens</span>
+                <br/>
+                <span class="ignored-method-name">StationAlarmManagementRecord_creation</span>
+                <br/>
+                <span class="ignored-method-name">navigateToLeavingmedicationt</span>
+                <br/>
+                <span class="ignored-method-name">createingNewRecordAbsencereasonsColors</span>
+                <br/>
+                <span class="ignored-method-name">createingNewRecordActivitiesforPABworkplan</span>
+                <br/>
+                <span class="ignored-method-name">navigateToReturnVisitTicket</span>
+                <br/>
+                <span class="ignored-method-name">createingNewRecordOrdonnanceInterne</span>
+                <br/>
+                <span class="ignored-method-name">consultantCall_Creation</span>
+                <br/>
+                <span class="ignored-method-name">sortingAndDeletingActivitiesforPABworkplan</span>
+                <br/>
+                <span class="ignored-method-name">createingNewRecordReorientedDepartureAlternativeRessource</span>
+                <br/>
+                <span class="ignored-method-name">navigateToCriticalPatients</span>
+                <br/>
+                <span class="ignored-method-name">validatingColumnsTriagecomplaintsconfigurationpediatrics</span>
+                <br/>
+                <span class="ignored-method-name">sortingAndDeletingProvenance</span>
+                <br/>
+                <span class="ignored-method-name">verifyingTheFilter</span>
+                <br/>
+                <span class="ignored-method-name">createingNewRecordClinicalDossier</span>
+                <br/>
+                <span class="ignored-method-name">perfusionSpecification_filterRecords</span>
+                <br/>
+                <span class="ignored-method-name">navigateToDiet</span>
+                <br/>
+                <span class="ignored-method-name">navigateToTemperatureQualitative</span>
+                <br/>
+                <span class="ignored-method-name">sortingAndDeletingAbsenceReasonsScreeninTools</span>
+                <br/>
+                <span class="ignored-method-name">createingNewRecordBloodpressureQualitative</span>
+                <br/>
+                <span class="ignored-method-name">createingNewRecordHeartrateQualitative</span>
+                <br/>
+                <span class="ignored-method-name">AH280_AdditionalInformation_Validation</span>
+                <br/>
+                <span class="ignored-method-name">codeColumnsValidationRespiratoryrateQualitative</span>
+                <br/>
+                <span class="ignored-method-name">sortingAndDeletingReasonsForCodeOrange</span>
+                <br/>
+                <span class="ignored-method-name">verifyingTheFilterExam</span>
+                <br/>
+                <span class="ignored-method-name">listOfProtocols_Diet</span>
+                <br/>
+                <span class="ignored-method-name">listOfQuickPrescriptionSection_Validation</span>
+                <br/>
+                <span class="ignored-method-name">navigateToSeverity</span>
+                <br/>
+                <span class="ignored-method-name">navigateToTriagecomplaintsconfigurationpediatrics</span>
+                <br/>
+                <span class="ignored-method-name">creatingNewRecordSpecialActivitiesConfiguration</span>
+                <br/>
+                <span class="ignored-method-name">sortingAndDeleting_StrBedCat</span>
+                <br/>
+                <span class="ignored-method-name">frequency_Validation</span>
+                <br/>
+                <span class="ignored-method-name">createingNewRecordRapDepistage5</span>
+                <br/>
+                <span class="ignored-method-name">navigateToReturnhomeReferredServices</span>
+                <br/>
+                <span class="ignored-method-name">navigateToRespiratoryrateQualitative</span>
+                <br/>
+                <span class="ignored-method-name">alarmPriorityAndColorManagementValidation</span>
+                <br/>
+                <span class="ignored-method-name">perfusionSpecification_Validation</span>
+                <br/>
+                <span class="ignored-method-name">Interveners_Validation</span>
+                <br/>
+                <span class="ignored-method-name">listOfProtocols_Medicaments</span>
+                <br/>
+                <span class="ignored-method-name">activitiesCancelReasonsValidation</span>
+                <br/>
+                <span class="ignored-method-name">duplicateErrorValiadtionTemperatureQualitative</span>
+                <br/>
+                <span class="ignored-method-name">listOfLinksSheetSection_filterRecords</span>
+                <br/>
+                <span class="ignored-method-name">filterRecords_Schedule</span>
+                <br/>
+                <span class="ignored-method-name">sortingAndDeletingTemperatureQualitative</span>
+                <br/>
+                <span class="ignored-method-name">DomainConfiguration_Validation</span>
+                <br/>
+                <span class="ignored-method-name">createingNewRecordLWBSReasons</span>
+                <br/>
+                <span class="ignored-method-name">ElementsNoteWordFormUIValidation</span>
+                <br/>
+                <span class="ignored-method-name">createingNewRecordTransferTransportation</span>
+                <br/>
+                <span class="ignored-method-name">DestinationAfterTriageValidation</span>
+                <br/>
+                <span class="ignored-method-name">currentPatientsActiveAlarm_Screen</span>
+                <br/>
+                <span class="ignored-method-name">validatingTheError</span>
+                <br/>
+                <span class="ignored-method-name">duplicateErrorValiadtionTransferEscort</span>
+                <br/>
+                <span class="ignored-method-name">duplicateRecordReorientedDepartureAlternativeRessource</span>
+                <br/>
+                <span class="ignored-method-name">OACISAdditionalInformation_Validation</span>
+                <br/>
+                <span class="ignored-method-name">sortingAndDeletingCategory</span>
+                <br/>
+                <span class="ignored-method-name">navigateToTransferEscort</span>
+                <br/>
+                <span class="ignored-method-name">navigateToBloodpressureQualitative</span>
+                <br/>
+                <span class="ignored-method-name">duplicateErrorValiadtionOxygenadministrationflow</span>
+                <br/>
+                <span class="ignored-method-name">filterElementsNoteWordForm</span>
+                <br/>
+                <span class="ignored-method-name">navigateToSensitivitytoAllergens</span>
+                <br/>
+                <span class="ignored-method-name">createingNewRecordReasonsForCodeOrange</span>
+                <br/>
+                <span class="ignored-method-name">ConsultantCall_filterRecords</span>
+                <br/>
+                <span class="ignored-method-name">VerifyingTheErrorsDosagegroups</span>
+                <br/>
+                <span class="ignored-method-name">navigateToVentilators</span>
+                <br/>
+                <span class="ignored-method-name">paymentResponsibilityValidation</span>
+                <br/>
+                <span class="ignored-method-name">navigateToHeartrateQualitative</span>
+                <br/>
+                <span class="ignored-method-name">AlarmAndNOSOValidation</span>
+                <br/>
+                <span class="ignored-method-name">filterRecords_diagnosis</span>
+                <br/>
+                <span class="ignored-method-name">departurePrintManagement_Validation</span>
+                <br/>
+                <span class="ignored-method-name">filterRecords_OWordBookmarkManagement</span>
+                <br/>
+                <span class="ignored-method-name">createingNewRecord1</span>
+                <br/>
+                <span class="ignored-method-name">navigateToProvenance</span>
+                <br/>
+                <span class="ignored-method-name">navigateToSpecialActivitiesConfigurationScreen</span>
+                <br/>
+                <span class="ignored-method-name">navigateToRapDepistage5</span>
+                <br/>
+                <span class="ignored-method-name">navigateToReturnhomeTypesofdischarge</span>
+                <br/>
+                <span class="ignored-method-name">codeColumnsValidationReturnVisitReasons</span>
+                <br/>
+                <span class="ignored-method-name">BriefAssessment_Validation</span>
+                <br/>
+                <span class="ignored-method-name">createElementsNoteWordForm</span>
+                <br/>
+                <span class="ignored-method-name">createingNewRecordProvenance</span>
+                <br/>
+                <span class="ignored-method-name">sortingAndDeletingStretcherBed</span>
+                <br/>
+                <span class="ignored-method-name">createingNewRecordReturnVisitTicket</span>
+                <br/>
+                <span class="ignored-method-name">sortingAndDeletingReorientedDepartureReasonforRefusal</span>
+                <br/>
+                <span class="ignored-method-name">sortingAndDeletingInformationsources</span>
+                <br/>
+                <span class="ignored-method-name">createingNewRecordGasResultsCorrespondence</span>
+                <br/>
+                <span class="ignored-method-name">navigateToClinicalstatus</span>
+                <br/>
+                <span class="ignored-method-name">configurationrReasonsForCodeOrange</span>
+                <br/>
+                <span class="ignored-method-name">verifyingThecolumns</span>
+                <br/>
+                <span class="ignored-method-name">duplicateErrorValiadtionClinicalstatus</span>
+                <br/>
+                <span class="ignored-method-name">filterRecords_Interveners</span>
+                <br/>
+                <span class="ignored-method-name">navigateTotheDoctor</span>
+                <br/>
+                <span class="ignored-method-name">navigateToSpecialActivitiesAssociationScreen</span>
+                <br/>
+                <span class="ignored-method-name">listOfLinksSheetSection_Validation</span>
+                <br/>
+                <span class="ignored-method-name">navigateToOxygenadministrationflow</span>
+                <br/>
+                <span class="ignored-method-name">navigateToTriage</span>
+                <br/>
+                <span class="ignored-method-name">sortingAndDeletingLWBSReasons</span>
+                <br/>
+                <span class="ignored-method-name">createingNewRecordReturnhomeTypesofdischarge</span>
+                <br/>
+                <span class="ignored-method-name">VerifyingTheErrorsPerfusionType</span>
+                <br/>
+                <span class="ignored-method-name">duplicateErrorValiadtionBloodpressureQualitative</span>
+                <br/>
+                <span class="ignored-method-name">diagnosisValidation</span>
+                <br/>
+                <span class="ignored-method-name">duplicateErrorValiadtionAbsenceReasonsScreeninTools</span>
+                <br/>
+                <span class="ignored-method-name">navigateToTransferPatientlist</span>
+                <br/>
+                <span class="ignored-method-name">listOfQuickPrescriptionItems_Validation</span>
+                <br/>
+                <span class="ignored-method-name">Score_filterRecords</span>
+                <br/>
+                <span class="ignored-method-name">createingNewRecordReturnVisitReasons</span>
+                <br/>
+                <span class="ignored-method-name">perfusionSite_Validation</span>
+                <br/>
+                <span class="ignored-method-name">addingDomain</span>
+                <br/>
+                <span class="ignored-method-name">controlpointsANdRoles</span>
+                <br/>
+                <span class="ignored-method-name">navigateToReturnVisitReasons</span>
+                <br/>
+                <span class="ignored-method-name">duplicateAndResidentDoctor</span>
+                <br/>
+                <span class="ignored-method-name">codeColumnsValidationDischargePlanningstatus</span>
+                <br/>
+                <span class="ignored-method-name">navigateToReasonsofConsultation</span>
+                <br/>
+                <span class="ignored-method-name">createingNewRecordVitalSigns</span>
+                <br/>
+                <span class="ignored-method-name">createingNewRecordAH280</span>
+                <br/>
+                <span class="ignored-method-name">createingNewRecordRespiratoryrateQualitative</span>
+                <br/>
+                <span class="ignored-method-name">createingNewRecordTriage</span>
+                <br/>
+                <span class="ignored-method-name">createingNewRecordScreeningToolsConfiguration</span>
+                <br/>
+                <span class="ignored-method-name">VerifyingTheErrorsExam</span>
+                <br/>
+                <span class="ignored-method-name">filterRecords_StretcherBed</span>
+                <br/>
+                <span class="ignored-method-name">verifyProtocolConfiguration</span>
+                <br/>
+                <span class="ignored-method-name">navigateToNeurologicalSigns</span>
+                <br/>
+                <span class="ignored-method-name">deafaultRouteAndFrequencyValidation</span>
+                <br/>
+                <span class="ignored-method-name">createingNewRecordHospitalizationReasonforcancellation</span>
+                <br/>
+                <span class="ignored-method-name">stretcherBedCategories</span>
+                <br/>
+                <span class="ignored-method-name">createingNewRecordInstitutionmissions</span>
+                <br/>
+                <span class="ignored-method-name">checkDomainErrorMessage</span>
+                <br/>
+                <span class="ignored-method-name">verifyingTheFilterDosagegroups</span>
+                <br/>
+                <span class="ignored-method-name">createingNewRecordDischargeOrder</span>
+                <br/>
+                <span class="ignored-method-name">listOfQuickPrescriptionSheet_Validation</span>
+                <br/>
+                <span class="ignored-method-name">createingNewRecordIntakeOutput</span>
+                <br/>
+                <span class="ignored-method-name">sortingAndDeletingAllergicsreaction</span>
+                <br/>
+                <span class="ignored-method-name">sortingAndDeletingReturnhomeReferredServices</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.testCases.CrossBrowserTesting</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">reportsGeneration</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">urlLaunch(chrome)</span>
+                <span class="method-start">15 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">routeOfAdministration_Validation</span>
+                <span class="method-start">13313 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">filterRecords_routeOfAdministration</span>
+                <span class="method-start">141147 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">afterClass</span>
+                <span class="method-start">181531 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>
